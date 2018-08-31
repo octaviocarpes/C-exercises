@@ -8,13 +8,15 @@
 
 int main()
 {
-    char name[] = {'O', 'C', 'T', 'A', 'V', 'I', 'O', '\0'};
+    char name[] = "Octavio";
 
-    printf("%s", name);
+    printf("%s\n", name);
+    printf("%d\n", strlen(name));
 
     for(int i = 0; i < strlen(name); i++) {
         if(name[i] == '\0') {
             name[i] = '.';
+            printf("%s", name);
         }
     }
 
